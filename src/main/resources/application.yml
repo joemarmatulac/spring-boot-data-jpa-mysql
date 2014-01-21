@@ -1,0 +1,15 @@
+jdbc:
+  driver: com.mysql.jdbc.Driver
+
+spring:
+  profiles:
+    active: dev
+    
+---
+
+spring:
+  profiles: dev
+jdbc:
+  url: jdbc:mysql://localhost:3306/jpasample
+  username: jpa
+  password: sample
